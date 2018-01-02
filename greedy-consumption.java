@@ -18,12 +18,12 @@ public class Garden {
     }
 
     /**
-     * Calculates the amount of carrots that a rabbit would consume.
-     * Note that this will modify the array, leaving 0s wherever the rabbit at the food.
+     * Calculates the amount of food that a creature would consume.
+     * Note that this will modify the array, leaving 0s wherever the creature ate the food.
      * Note also that this assumes that negative carrot quantities are the same as 0.
      * @param foodQuantities a 2-D array mapping locations in a
      *     garden to a quantity of carrots available in that location.
-     * @return The amount of food that a greedy rabbit starting in the center
+     * @return The amount of food that a greedy animal starting in the center
      *     of the garden that gives up as soon as it is no longer next to food
      *     would consume.
      */
@@ -70,7 +70,7 @@ public class Garden {
     }
 
     /**
-     * Chooses the move that nets the rabbit the most carrots. Assumes that all Positions in
+     * Chooses the move that nets the creature the most food. Assumes that all Positions in
      * possible moves are valid, since they should be calculated by enumeratePositions.
      */
     private Position chooseBestMove(List<Position> possibleMoves) {
